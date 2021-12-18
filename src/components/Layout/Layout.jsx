@@ -1,12 +1,4 @@
-// import AboutSection from "../AboutSection";
-// import ContactSection from "../ContactSection";
-// import FactSection from "../FactSection";
-// import PortfolioSection from "../PortfolioSection";
-// import ResumeSection from "../ResumeSection";
-// import ServicesSection from "../ServicesSection";
-// import SkillSection from "../SkillsSection";
-// import TestimonalSection from "../TestimonialSection";
-
+import { Link } from '@reach/router';
 import pp from '../../assets/img/PP.jpeg'
 
 const Layout = (props) => {
@@ -37,7 +29,7 @@ const Layout = (props) => {
 
                 <nav className="nav-menu">
                 <ul>
-                    <li className="active"><a href="#home"><i className="bx bx-home"></i> Home</a></li>
+                    <li className="active"><a ><i className="bx bx-home"></i> <Link to='/' > Home </Link> </a></li>
                     <li><a href="#about"><i className="bx bx-user"></i> About</a></li>
                     <li><a href="#resume"><i className="bx bx-file-blank"></i> Resume</a></li>
                     <li><a href="#portfolio"><i className="bx bx-book-content"></i> Portfolio</a></li>
